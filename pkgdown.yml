@@ -3,7 +3,7 @@ pkgdown: 2.0.1
 pkgdown_sha: ~
 articles:
   covidtest: covidtest.html
-last_built: 2021-12-10T23:10Z
+last_built: 2022-01-05T21:36Z
 urls:
   reference: https://jesse-smith.github.io/covidtest/reference
   article: https://jesse-smith.github.io/covidtest/articles

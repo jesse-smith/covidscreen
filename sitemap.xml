@@ -31,6 +31,12 @@
     <loc>https://jesse-smith.github.io/covidtest/reference/calc_dist.html</loc>
   </url>
   <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/conditionalNumericRangeInput.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/conditionalSliderRangeInput.html</loc>
+  </url>
+  <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/covidtest-package.html</loc>
   </url>
   <url>
@@ -49,12 +55,48 @@
     <loc>https://jesse-smith.github.io/covidtest/reference/info_modal.html</loc>
   </url>
   <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/input_panel_server.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/insert_args.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/num_input2.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/reactivePointRange.html</loc>
+  </url>
+  <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/reactive_dist.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/reactive_range.html</loc>
   </url>
   <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/run_app.html</loc>
   </url>
   <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/selectPointRange.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/select_input.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/select_output.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/slider_pct2.html</loc>
+  </url>
+  <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/tag_tooltip.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/toggle_panel_server.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/toggle_panel_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/updateConditionalNumericRangeInput.html</loc>
   </url>
 </urlset>
