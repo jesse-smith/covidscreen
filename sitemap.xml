@@ -40,10 +40,16 @@
     <loc>https://jesse-smith.github.io/covidtest/reference/covidtest-package.html</loc>
   </url>
   <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/ct_dist.html</loc>
+  </url>
+  <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/ct_nav_ext_link.html</loc>
   </url>
   <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/ct_nav_pad.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/ct_sum.html</loc>
   </url>
   <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/ct_tooltip.html</loc>
@@ -73,6 +79,9 @@
     <loc>https://jesse-smith.github.io/covidtest/reference/reactive_range.html</loc>
   </url>
   <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/risk-metrics.html</loc>
+  </url>
+  <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/run_app.html</loc>
   </url>
   <url>
@@ -89,6 +98,9 @@
   </url>
   <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/tag_tooltip.html</loc>
+  </url>
+  <url>
+    <loc>https://jesse-smith.github.io/covidtest/reference/test-metrics.html</loc>
   </url>
   <url>
     <loc>https://jesse-smith.github.io/covidtest/reference/toggle_panel_server.html</loc>
