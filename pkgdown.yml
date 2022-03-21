@@ -3,7 +3,7 @@ pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
   incidence-derivation: incidence-derivation.html
-last_built: 2022-03-21T16:50Z
+last_built: 2022-03-21T19:47Z
 urls:
   reference: https://jesse-smith.github.io/covidscreen/reference
   article: https://jesse-smith.github.io/covidscreen/articles

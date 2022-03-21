@@ -98,10 +98,10 @@
 <span class="co">#&gt;   method            from</span>
 <span class="co">#&gt;   as.zoo.data.frame zoo</span></code></pre></div>
 <p>To run the Shiny app, you can use <code><a href="reference/run_app.html">run_app()</a></code> or visit an <a href="https://jesse-shiny.shinyapps.io/covidscreen/" class="external-link">online version</a>.</p>
-<p>To access the underlying model in <strong>R</strong>, you can use <code><a href="reference/ct_dist.html">ct_dist()</a></code> with the desired parameters. Running with no inputs uses the defaults; the output is a <code>data.table</code>:</p>
+<p>To access the underlying model in <strong>R</strong>, you can use <code><a href="reference/cs_dist.html">cs_dist()</a></code> with the desired parameters. Running with no inputs uses the defaults; the output is a <code>data.table</code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Create some data using default parameters</span>
-<span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/ct_dist.html">ct_dist</a></span><span class="op">(</span><span class="op">)</span>
+<span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/cs_dist.html">cs_dist</a></span><span class="op">(</span><span class="op">)</span>
 
 <span class="co"># Show data</span>
 <span class="va">data</span>
@@ -139,105 +139,105 @@
 <span class="co">#&gt; 31: 0.0000000000 FALSE FALSE FALSE FALSE   TRUE</span>
 <span class="co">#&gt; 32: 0.4000000000 FALSE FALSE FALSE FALSE  FALSE</span>
 <span class="co">#&gt;                p   vac   inf  symp  test detect</span></code></pre></div>
-<p>You can access the risk-based metrics used in the Shiny app using corresponding functions in the R package. Undetected cases are calculated using <code><a href="reference/risk-metrics.html">ct_undetected()</a></code>, relative risk reduction is calculated using <code><a href="reference/risk-metrics.html">ct_rr()</a></code>, and cost effectiveness per test is calculated using <code><a href="reference/risk-metrics.html">ct_cost_eff()</a></code>.</p>
+<p>You can access the risk-based metrics used in the Shiny app using corresponding functions in the R package. Undetected cases are calculated using <code><a href="reference/risk-metrics.html">cs_undetected()</a></code>, relative risk reduction is calculated using <code><a href="reference/risk-metrics.html">cs_rr()</a></code>, and cost effectiveness per test is calculated using <code><a href="reference/risk-metrics.html">cs_cost_eff()</a></code>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Cost effectiveness</span>
-<span class="fu"><a href="reference/risk-metrics.html">ct_undetected</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/risk-metrics.html">cs_undetected</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.03633929</span>
 
 <span class="co"># Relative risk reduction</span>
-<span class="fu"><a href="reference/risk-metrics.html">ct_rr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/risk-metrics.html">cs_rr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.07709751</span>
 
 <span class="co"># Cost effectiveness</span>
-<span class="fu"><a href="reference/risk-metrics.html">ct_cost_eff</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/risk-metrics.html">cs_cost_eff</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.1651079</span></code></pre></div>
 <p>Additionally, test performance metrics are included in the R package to facilitate analysis not performed in the Shiny app. These include:</p>
 <ul>
 <li>
-<code><a href="reference/test-metrics.html">ct_pos()</a></code>: the proportion of positive tests (out of the organization)</li>
+<code><a href="reference/test-metrics.html">cs_pos()</a></code>: the proportion of positive tests (out of the organization)</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_neg()</a></code>: the proportion of negative tests (out of the organization)</li>
+<code><a href="reference/test-metrics.html">cs_neg()</a></code>: the proportion of negative tests (out of the organization)</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_true_pos()</a></code>: the proportion of true positive tests (out of org)</li>
+<code><a href="reference/test-metrics.html">cs_true_pos()</a></code>: the proportion of true positive tests (out of org)</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_true_neg()</a></code>: the proportion of true negative tests (out of org)</li>
+<code><a href="reference/test-metrics.html">cs_true_neg()</a></code>: the proportion of true negative tests (out of org)</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_false_pos()</a></code>: the proportion of false positive tests (out of org)</li>
+<code><a href="reference/test-metrics.html">cs_false_pos()</a></code>: the proportion of false positive tests (out of org)</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_false_neg()</a></code>: the proportion of false negative tests (out of org)</li>
+<code><a href="reference/test-metrics.html">cs_false_neg()</a></code>: the proportion of false negative tests (out of org)</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_ppv()</a></code>: the positive predictive value of a test</li>
+<code><a href="reference/test-metrics.html">cs_ppv()</a></code>: the positive predictive value of a test</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_npv()</a></code>: the negative predictive value of a test</li>
+<code><a href="reference/test-metrics.html">cs_npv()</a></code>: the negative predictive value of a test</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_fdr()</a></code>: the false discovery rate of a test</li>
+<code><a href="reference/test-metrics.html">cs_fdr()</a></code>: the false discovery rate of a test</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_for()</a></code>: the false omission rate of a test</li>
+<code><a href="reference/test-metrics.html">cs_for()</a></code>: the false omission rate of a test</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_sens()</a></code>: the sensitivity (true positive rate, recall) of a test</li>
+<code><a href="reference/test-metrics.html">cs_sens()</a></code>: the sensitivity (true positive rate, recall) of a test</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_spec()</a></code>: the specificity (true negative rate) of a test</li>
+<code><a href="reference/test-metrics.html">cs_spec()</a></code>: the specificity (true negative rate) of a test</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_fpr()</a></code>: the false positive rate of a test</li>
+<code><a href="reference/test-metrics.html">cs_fpr()</a></code>: the false positive rate of a test</li>
 <li>
-<code><a href="reference/test-metrics.html">ct_fnr()</a></code>: the false negative rate of a test</li>
+<code><a href="reference/test-metrics.html">cs_fnr()</a></code>: the false negative rate of a test</li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Positive tests</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_pos</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_pos</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.01366071</span>
 
 <span class="co"># Negative tests</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_neg</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_neg</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.06907738</span>
 
 <span class="co"># True positives</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_true_pos</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_true_pos</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.01366071</span>
 
 <span class="co"># True negatives</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_true_neg</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_true_neg</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.06666667</span>
 
 <span class="co"># False positives</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_false_pos</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_false_pos</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0</span>
 
 <span class="co"># False negatives</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_false_neg</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_false_neg</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.002410714</span>
 
 <span class="co"># Positive predictive value (precision)</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_ppv</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_ppv</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 1</span>
 
 <span class="co"># Negative predictive value</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_npv</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_npv</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.9651012</span>
 
 <span class="co"># False discovery rate</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_fdr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_fdr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0</span>
 
 <span class="co"># False omission rate</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_for</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_for</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.03489875</span>
 
 <span class="co"># True positive rate (sensitivity/recall)</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_sens</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_sens</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.85</span>
 
 <span class="co"># True negative rate (specificity)</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_spec</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_spec</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 1</span>
 
 <span class="co"># False positive rate</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_fpr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_fpr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0</span>
 
 <span class="co"># False negative rate</span>
-<span class="fu"><a href="reference/test-metrics.html">ct_fnr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="fu"><a href="reference/test-metrics.html">cs_fnr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
 <span class="co">#&gt; [1] 0.15</span></code></pre></div>
 </div>
 <div class="section level2">
