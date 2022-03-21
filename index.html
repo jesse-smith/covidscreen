@@ -5,19 +5,19 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Covidtest is a Shiny app that allows decision-makers to
+<meta name="description" content="Covidscreen is a Shiny app that allows decision-makers to
     assess the benefits of performing asymptomatic testing in their
     organizations. It is primarily aimed at healthcare organizations,
     though it is applicable in a much wider range of settings.">
-<title>COVID-19 Testing Strategy Assessment • covidtest</title>
+<title>COVID-19 Asymtomatic Screening Strategy Assessment • covidscreen</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><link href="deps/_Roboto-0.4.0/font.css" rel="stylesheet">
 <link href="deps/_Roboto%20Mono-0.4.0/font.css" rel="stylesheet">
 <!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="COVID-19 Testing Strategy Assessment">
-<meta property="og:description" content="Covidtest is a Shiny app that allows decision-makers to
+<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="COVID-19 Asymtomatic Screening Strategy Assessment">
+<meta property="og:description" content="Covidscreen is a Shiny app that allows decision-makers to
     assess the benefits of performing asymptomatic testing in their
     organizations. It is primarily aimed at healthcare organizations,
     though it is applicable in a much wider range of settings.">
@@ -32,7 +32,7 @@
 
     <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
     
-    <a class="navbar-brand me-2" href="index.html">covidtest</a>
+    <a class="navbar-brand me-2" href="index.html">covidscreen</a>
 
     <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9000</small>
 
@@ -62,7 +62,7 @@
 
       <ul class="navbar-nav">
 <li class="nav-item">
-  <a class="external-link nav-link" href="https://github.com/jesse-smith/covidtest/" aria-label="github">
+  <a class="external-link nav-link" href="https://github.com/jesse-smith/covidscreen/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -75,29 +75,29 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="covidtest">covidtest<a class="anchor" aria-label="anchor" href="#covidtest"></a>
+<div class="page-header"><h1 id="covidscreen">covidscreen<a class="anchor" aria-label="anchor" href="#covidscreen"></a>
 </h1></div>
 <!-- badges: start -->
 
-<p>{covidtest} is an R package and Shiny app designed to help organizations evaluate their risk from COVID-19 and the potential benefits of regular asymptomatic testing.</p>
+<p>{covidscreen} is an R package and Shiny app designed to help organizations evaluate their risk from COVID-19 and the potential benefits of regular asymptomatic testing.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of {covidtest} from Github with:</p>
+<p>You can install the development version of {covidscreen} from Github with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="st">"remotes"</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/installed.packages.html" class="external-link">installed.packages</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"jesse-smith/covidtest"</span><span class="op">)</span></code></pre></div>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"jesse-smith/covidscreen"</span><span class="op">)</span></code></pre></div>
 <p>If you are using R on Windows, you will need to first install Rtools <a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link">here</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jesse-smith/covidtest" class="external-link">covidtest</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jesse-smith/covidscreen" class="external-link">covidscreen</a></span><span class="op">)</span>
 <span class="co">#&gt; Registered S3 method overwritten by 'quantmod':</span>
 <span class="co">#&gt;   method            from</span>
 <span class="co">#&gt;   as.zoo.data.frame zoo</span></code></pre></div>
-<p>To run the Shiny app, you can use <code><a href="reference/run_app.html">run_app()</a></code> or visit an <a href="https://jesse-shiny.shinyapps.io/covidtest/" class="external-link">online version</a>.</p>
+<p>To run the Shiny app, you can use <code><a href="reference/run_app.html">run_app()</a></code> or visit an <a href="https://jesse-shiny.shinyapps.io/covidscreen/" class="external-link">online version</a>.</p>
 <p>To access the underlying model in <strong>R</strong>, you can use <code><a href="reference/ct_dist.html">ct_dist()</a></code> with the desired parameters. Running with no inputs uses the defaults; the output is a <code>data.table</code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Create some data using default parameters</span>
@@ -106,52 +106,52 @@
 <span class="co"># Show data</span>
 <span class="va">data</span>
 <span class="co">#&gt;                p   vac   inf  symp  test detect</span>
-<span class="co">#&gt;  1: 7.083333e-04  TRUE  TRUE  TRUE  TRUE   TRUE</span>
-<span class="co">#&gt;  2: 1.250000e-04  TRUE  TRUE  TRUE  TRUE  FALSE</span>
-<span class="co">#&gt;  3: 0.000000e+00  TRUE  TRUE  TRUE FALSE   TRUE</span>
-<span class="co">#&gt;  4: 0.000000e+00  TRUE  TRUE  TRUE FALSE  FALSE</span>
-<span class="co">#&gt;  5: 3.035714e-04  TRUE  TRUE FALSE  TRUE   TRUE</span>
-<span class="co">#&gt;  6: 5.357143e-05  TRUE  TRUE FALSE  TRUE  FALSE</span>
-<span class="co">#&gt;  7: 0.000000e+00  TRUE  TRUE FALSE FALSE   TRUE</span>
-<span class="co">#&gt;  8: 2.142857e-03  TRUE  TRUE FALSE FALSE  FALSE</span>
-<span class="co">#&gt;  9: 0.000000e+00  TRUE FALSE  TRUE  TRUE   TRUE</span>
-<span class="co">#&gt; 10: 0.000000e+00  TRUE FALSE  TRUE  TRUE  FALSE</span>
-<span class="co">#&gt; 11: 0.000000e+00  TRUE FALSE  TRUE FALSE   TRUE</span>
-<span class="co">#&gt; 12: 0.000000e+00  TRUE FALSE  TRUE FALSE  FALSE</span>
-<span class="co">#&gt; 13: 0.000000e+00  TRUE FALSE FALSE  TRUE   TRUE</span>
-<span class="co">#&gt; 14: 7.095238e-02  TRUE FALSE FALSE  TRUE  FALSE</span>
-<span class="co">#&gt; 15: 0.000000e+00  TRUE FALSE FALSE FALSE   TRUE</span>
-<span class="co">#&gt; 16: 4.257143e-01  TRUE FALSE FALSE FALSE  FALSE</span>
-<span class="co">#&gt; 17: 1.416667e-03 FALSE  TRUE  TRUE  TRUE   TRUE</span>
-<span class="co">#&gt; 18: 2.500000e-04 FALSE  TRUE  TRUE  TRUE  FALSE</span>
-<span class="co">#&gt; 19: 0.000000e+00 FALSE  TRUE  TRUE FALSE   TRUE</span>
-<span class="co">#&gt; 20: 0.000000e+00 FALSE  TRUE  TRUE FALSE  FALSE</span>
-<span class="co">#&gt; 21: 6.071429e-04 FALSE  TRUE FALSE  TRUE   TRUE</span>
-<span class="co">#&gt; 22: 1.071429e-04 FALSE  TRUE FALSE  TRUE  FALSE</span>
-<span class="co">#&gt; 23: 0.000000e+00 FALSE  TRUE FALSE FALSE   TRUE</span>
-<span class="co">#&gt; 24: 4.285714e-03 FALSE  TRUE FALSE FALSE  FALSE</span>
-<span class="co">#&gt; 25: 0.000000e+00 FALSE FALSE  TRUE  TRUE   TRUE</span>
-<span class="co">#&gt; 26: 0.000000e+00 FALSE FALSE  TRUE  TRUE  FALSE</span>
-<span class="co">#&gt; 27: 0.000000e+00 FALSE FALSE  TRUE FALSE   TRUE</span>
-<span class="co">#&gt; 28: 0.000000e+00 FALSE FALSE  TRUE FALSE  FALSE</span>
-<span class="co">#&gt; 29: 0.000000e+00 FALSE FALSE FALSE  TRUE   TRUE</span>
-<span class="co">#&gt; 30: 7.047619e-02 FALSE FALSE FALSE  TRUE  FALSE</span>
-<span class="co">#&gt; 31: 0.000000e+00 FALSE FALSE FALSE FALSE   TRUE</span>
-<span class="co">#&gt; 32: 4.228571e-01 FALSE FALSE FALSE FALSE  FALSE</span>
+<span class="co">#&gt;  1: 0.0035416667  TRUE  TRUE  TRUE  TRUE   TRUE</span>
+<span class="co">#&gt;  2: 0.0006250000  TRUE  TRUE  TRUE  TRUE  FALSE</span>
+<span class="co">#&gt;  3: 0.0000000000  TRUE  TRUE  TRUE FALSE   TRUE</span>
+<span class="co">#&gt;  4: 0.0000000000  TRUE  TRUE  TRUE FALSE  FALSE</span>
+<span class="co">#&gt;  5: 0.0000000000  TRUE  TRUE FALSE  TRUE   TRUE</span>
+<span class="co">#&gt;  6: 0.0000000000  TRUE  TRUE FALSE  TRUE  FALSE</span>
+<span class="co">#&gt;  7: 0.0000000000  TRUE  TRUE FALSE FALSE   TRUE</span>
+<span class="co">#&gt;  8: 0.0125000000  TRUE  TRUE FALSE FALSE  FALSE</span>
+<span class="co">#&gt;  9: 0.0000000000  TRUE FALSE  TRUE  TRUE   TRUE</span>
+<span class="co">#&gt; 10: 0.0000000000  TRUE FALSE  TRUE  TRUE  FALSE</span>
+<span class="co">#&gt; 11: 0.0000000000  TRUE FALSE  TRUE FALSE   TRUE</span>
+<span class="co">#&gt; 12: 0.0000000000  TRUE FALSE  TRUE FALSE  FALSE</span>
+<span class="co">#&gt; 13: 0.0000000000  TRUE FALSE FALSE  TRUE   TRUE</span>
+<span class="co">#&gt; 14: 0.0000000000  TRUE FALSE FALSE  TRUE  FALSE</span>
+<span class="co">#&gt; 15: 0.0000000000  TRUE FALSE FALSE FALSE   TRUE</span>
+<span class="co">#&gt; 16: 0.4833333333  TRUE FALSE FALSE FALSE  FALSE</span>
+<span class="co">#&gt; 17: 0.0070833333 FALSE  TRUE  TRUE  TRUE   TRUE</span>
+<span class="co">#&gt; 18: 0.0012500000 FALSE  TRUE  TRUE  TRUE  FALSE</span>
+<span class="co">#&gt; 19: 0.0000000000 FALSE  TRUE  TRUE FALSE   TRUE</span>
+<span class="co">#&gt; 20: 0.0000000000 FALSE  TRUE  TRUE FALSE  FALSE</span>
+<span class="co">#&gt; 21: 0.0030357143 FALSE  TRUE FALSE  TRUE   TRUE</span>
+<span class="co">#&gt; 22: 0.0005357143 FALSE  TRUE FALSE  TRUE  FALSE</span>
+<span class="co">#&gt; 23: 0.0000000000 FALSE  TRUE FALSE FALSE   TRUE</span>
+<span class="co">#&gt; 24: 0.0214285714 FALSE  TRUE FALSE FALSE  FALSE</span>
+<span class="co">#&gt; 25: 0.0000000000 FALSE FALSE  TRUE  TRUE   TRUE</span>
+<span class="co">#&gt; 26: 0.0000000000 FALSE FALSE  TRUE  TRUE  FALSE</span>
+<span class="co">#&gt; 27: 0.0000000000 FALSE FALSE  TRUE FALSE   TRUE</span>
+<span class="co">#&gt; 28: 0.0000000000 FALSE FALSE  TRUE FALSE  FALSE</span>
+<span class="co">#&gt; 29: 0.0000000000 FALSE FALSE FALSE  TRUE   TRUE</span>
+<span class="co">#&gt; 30: 0.0666666667 FALSE FALSE FALSE  TRUE  FALSE</span>
+<span class="co">#&gt; 31: 0.0000000000 FALSE FALSE FALSE FALSE   TRUE</span>
+<span class="co">#&gt; 32: 0.4000000000 FALSE FALSE FALSE FALSE  FALSE</span>
 <span class="co">#&gt;                p   vac   inf  symp  test detect</span></code></pre></div>
 <p>You can access the risk-based metrics used in the Shiny app using corresponding functions in the R package. Undetected cases are calculated using <code><a href="reference/risk-metrics.html">ct_undetected()</a></code>, relative risk reduction is calculated using <code><a href="reference/risk-metrics.html">ct_rr()</a></code>, and cost effectiveness per test is calculated using <code><a href="reference/risk-metrics.html">ct_cost_eff()</a></code>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Cost effectiveness</span>
 <span class="fu"><a href="reference/risk-metrics.html">ct_undetected</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.006964286</span>
+<span class="co">#&gt; [1] 0.03633929</span>
 
 <span class="co"># Relative risk reduction</span>
 <span class="fu"><a href="reference/risk-metrics.html">ct_rr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.1156463</span>
+<span class="co">#&gt; [1] 0.07709751</span>
 
 <span class="co"># Cost effectiveness</span>
 <span class="fu"><a href="reference/risk-metrics.html">ct_cost_eff</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.02093596</span></code></pre></div>
+<span class="co">#&gt; [1] 0.1651079</span></code></pre></div>
 <p>Additionally, test performance metrics are included in the R package to facilitate analysis not performed in the Shiny app. These include:</p>
 <ul>
 <li>
@@ -186,19 +186,19 @@
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Positive tests</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_pos</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.003035714</span>
+<span class="co">#&gt; [1] 0.01366071</span>
 
 <span class="co"># Negative tests</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_neg</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.1419643</span>
+<span class="co">#&gt; [1] 0.06907738</span>
 
 <span class="co"># True positives</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_true_pos</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.003035714</span>
+<span class="co">#&gt; [1] 0.01366071</span>
 
 <span class="co"># True negatives</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_true_neg</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.1414286</span>
+<span class="co">#&gt; [1] 0.06666667</span>
 
 <span class="co"># False positives</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_false_pos</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
@@ -206,7 +206,7 @@
 
 <span class="co"># False negatives</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_false_neg</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.0005357143</span>
+<span class="co">#&gt; [1] 0.002410714</span>
 
 <span class="co"># Positive predictive value (precision)</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_ppv</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
@@ -214,7 +214,7 @@
 
 <span class="co"># Negative predictive value</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_npv</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.9962264</span>
+<span class="co">#&gt; [1] 0.9651012</span>
 
 <span class="co"># False discovery rate</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_fdr</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
@@ -222,7 +222,7 @@
 
 <span class="co"># False omission rate</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_for</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.003773585</span>
+<span class="co">#&gt; [1] 0.03489875</span>
 
 <span class="co"># True positive rate (sensitivity/recall)</span>
 <span class="fu"><a href="reference/test-metrics.html">ct_sens</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
@@ -243,14 +243,14 @@
 <div class="section level2">
 <h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
 </h2>
-<p>Please note that the {covidtest} project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<p>Please note that the {covidscreen} project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/jesse-smith/covidtest/" class="external-link">Browse source code</a></li>
-<li><a href="https://github.com/jesse-smith/covidtest/issues" class="external-link">Report a bug</a></li>
+<li><a href="https://github.com/jesse-smith/covidscreen/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/jesse-smith/covidscreen/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
@@ -272,7 +272,7 @@
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html#citation">Citing covidtest</a></li>
+<li><a href="authors.html#citation">Citing covidscreen</a></li>
 </ul>
 </div>
 
@@ -287,8 +287,8 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/jesse-smith/covidtest/actions" class="external-link"><img src="https://github.com/jesse-smith/covidtest/workflows/CI-CD/badge.svg" alt="CI-CD"></a></li>
-<li><a href="https://codecov.io/gh/jesse-smith/covidtest?branch=master" class="external-link"><img src="https://codecov.io/gh/jesse-smith/covidtest/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://github.com/jesse-smith/covidscreen/actions" class="external-link"><img src="https://github.com/jesse-smith/covidscreen/workflows/CI-CD/badge.svg" alt="CI-CD"></a></li>
+<li><a href="https://codecov.io/gh/jesse-smith/covidscreen?branch=master" class="external-link"><img src="https://codecov.io/gh/jesse-smith/covidscreen/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
 
